@@ -1,2 +1,199 @@
-<h1>Test Mundial 2026</h1>
-<p>Mi primera pagina</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundial 2026 - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { 
+      background: #0a192f; 
+      color: white; 
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar { 
+      background: #112240 !important; 
+      border-bottom: 2px solid #64ffda;
+    }
+    .navbar-brand { color: #64ffda !important; }
+    .nav-link { color: white !important; }
+    .nav-link:hover { color: #64ffda !important; }
+    .hero {
+      background: linear-gradient(135deg, #112240 0%, #0a192f 100%);
+      padding: 80px 0;
+      text-align: center;
+      border-bottom: 3px solid #64ffda;
+    }
+    h1, h2, h3 { color: #64ffda; }
+    .contador-card {
+      background: #112240;
+      border: 2px solid #233554;
+      border-radius: 15px;
+      padding: 30px;
+      margin: 30px 0;
+    }
+    .numero { font-size: 60px; color: #64ffda; font-weight: bold; }
+    .dato-card {
+      background: #112240;
+      border: 1px solid #233554;
+      border-radius: 10px;
+      padding: 20px;
+      height: 100%;
+      transition: 0.3s;
+    }
+    .dato-card:hover {
+      border-color: #64ffda;
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #112240;
+      padding: 20px 0;
+      margin-top: 50px;
+      border-top: 2px solid #64ffda;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR CON LOS 5 BOTONES - COPIA ESTO IGUAL EN TODAS LAS PÁGINAS -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="index.html">⚽ Mundial 2026</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jugadores.html">Jugadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sedes.html">Sedes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grupos.html">Grupos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datos.html">Datos Reales</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-4">Mundial 2026</h1>
+      <p class="lead fs-4">El torneo más grande de la historia</p>
+      <p class="fs-5">48 selecciones | 16 ciudades | 3 países | 104 partidos</p>
+    </div>
+  </section>
+
+  <!-- CONTADOR -->
+  <section class="py-5">
+    <div class="container">
+      <div class="contador-card text-center">
+        <h2 class="mb-4">Faltan para el inicio</h2>
+        <div class="row">
+          <div class="col-3">
+            <div class="numero" id="dias">000</div>
+            <p>Días</p>
+          </div>
+          <div class="col-3">
+            <div class="numero" id="horas">00</div>
+            <p>Horas</p>
+          </div>
+          <div class="col-3">
+            <div class="numero" id="minutos">00</div>
+            <p>Minutos</p>
+          </div>
+          <div class="col-3">
+            <div class="numero" id="segundos">00</div>
+            <p>Segundos</p>
+          </div>
+        </div>
+        <p class="mt-4 fs-5">Inauguración: 11 Junio 2026 - Estadio Azteca</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATOS RÁPIDOS -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Datos Oficiales del Mundial</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <div class="dato-card">
+            <h3>3 Países</h3>
+            <p class="fs-1">🇲🇽🇺🇸🇨🇦</p>
+            <p>México, USA y Canadá<br>anfitriones juntos</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="dato-card">
+            <h3>48 Equipos</h3>
+            <p class="fs-1">🏆</p>
+            <p>El mundial más grande<br>de la historia</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="dato-card">
+            <h3>16 Ciudades</h3>
+            <p class="fs-1">🏟️</p>
+            <p>3 en México<br>11 en USA<br>2 en Canadá</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="dato-card">
+            <h3>104 Partidos</h3>
+            <p class="fs-1">⚽</p>
+            <p>40 partidos más<br>que Qatar 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">Proyecto Escolar - Mundial 2026 | Datos oficiales FIFA</p>
+      <p class="small text-muted">Sorteo de grupos: Diciembre 2025</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- CONTADOR FUNCIONAL -->
+  <script>
+    const fechaMundial = new Date("June 11, 2026 00:00:00").getTime();
+    
+    const contador = setInterval(function() {
+      const ahora = new Date().getTime();
+      const distancia = fechaMundial - ahora;
+      
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+      
+      document.getElementById("dias").innerHTML = dias;
+      document.getElementById("horas").innerHTML = horas.toString().padStart(2, '0');
+      document.getElementById("minutos").innerHTML = minutos.toString().padStart(2, '0');
+      document.getElementById("segundos").innerHTML = segundos.toString().padStart(2, '0');
+      
+      if (distancia < 0) {
+        clearInterval(contador);
+        document.querySelector(".contador-card").innerHTML = "<h2>¡El Mundial ya empezó!</h2>";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
